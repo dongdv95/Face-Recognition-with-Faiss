@@ -1,2 +1,3 @@
 # Face-Recognition-with-Faiss
-faiss, face-recognition, django rest api
+```
+pip install -r requirements.txt
