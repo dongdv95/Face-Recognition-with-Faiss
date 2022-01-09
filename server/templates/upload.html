@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upload</title>
+</head>
+<body>
+    <h1>hello world</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="file"/>
+        <button type="submit">upload</button>
+    </form>
+    {% if img %}
+        <label>{{ name }} </label>
+        <img src="{{ img }}" class="img-responsive" style="width: 50%; float: left; margin-right: 10px;" />
+    {% endif %}
+</body>
+</html>
